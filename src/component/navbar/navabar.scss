@@ -1,0 +1,77 @@
+@import "../variables/variables.scss";
+.navabr{
+   
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    .pges_router{
+        width: 100%;
+        display: grid;
+        place-items: center;
+        h2 {
+            font-size: 25px;
+            font-weight: bold;
+            color: $color_dark;
+        }
+        .links{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6rem;
+            margin-bottom: 18px;
+            text-align: center;
+           
+           
+            .nava-link{
+                text-transform: capitalize;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                color: black;
+                position: relative;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top:30px;
+                  left: 0;
+                  width: 0px;
+                  height: 2px;
+                  background-color: $color_dark_orange;
+                  transition: all 0.2s ease-in-out;
+                }
+                &:hover {
+                    color: $color_dark_orange;
+                    &::after{
+                        width: 100%;
+                    }
+                 
+                }
+                &.active {
+                    color: $color_dark_orange;
+                    &::after{
+                        width: 100%;
+                    }
+                 
+                }
+            } 
+            } 
+            .amation-light{
+               position: absolute;
+               top: 4px;
+               left: 0;
+               right: 0;
+               bottom: 0;
+               width: 100%;
+              
+                background-color: yellow;
+                height: 2px;
+                display: block;
+                transition: all 0.4s ease-in-out;
+                
+            }
+           
+        }
+    }
