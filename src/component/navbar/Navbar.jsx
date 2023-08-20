@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="container">
         <nav>
           <div className="pges_router">
-            <h2>VINST REDOVISNING</h2>
+            <h2>Yalla redovisning</h2>
 
             <div className="links">
               <NavLink className="nava-link" to="/">

@@ -1,5 +1,6 @@
 import {FaChartBar,FaCommentDots} from "react-icons/fa"
 import {TbCircleDot} from "react-icons/tb";
+import { Link } from "react-router-dom";
 import "./Start.scss";
 const Start = () => {
   return (
@@ -11,7 +12,7 @@ const Start = () => {
     <div className="testimonial-content">
       <h2>Trygga lösningar för er ekonomi.</h2>
       <p>Vinst Redovisning i Jönköping AB erbjuder helhetslösningar och enskilda tjänster inom bokföring, redovisning, rådgivning, lön och konsultationer. </p>
-      <a href="#">KONTAKTA OSS</a>
+      <Link to="/Kontakt" className="custom-btn btn-12" href="#"> <span>Click!</span><span>KONTAKTA OSS</span></Link>
     </div>
   </div>
 </section>

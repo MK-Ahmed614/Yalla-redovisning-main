@@ -14,38 +14,41 @@
             font-size: 25px;
             font-weight: bold;
             color: $color_dark;
+            text-transform: uppercase;
         }
         .links{
-            margin-top: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 6rem;
-            margin-bottom: 18px;
+            margin: 20px 0 10px;
             text-align: center;
-           
+           gap: 4rem;
            
             .nava-link{
-                text-transform: capitalize;
+                text-transform: uppercase;
                 text-decoration: none;
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: bold;
                 color: black;
                 position: relative;
+                padding: 0 0 7px;
                 &::after {
-                  content: "";
-                  position: absolute;
-                  top:30px;
-                  left: 0;
-                  width: 0px;
-                  height: 2px;
-                  background-color: $color_dark_orange;
-                  transition: all 0.2s ease-in-out;
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    left: 50%;
+                    position: absolute;
+                    background: $color_dark_orange;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
                 }
                 &:hover {
                     color: $color_dark_orange;
                     &::after{
                         width: 100%;
+                        left: 0; 
                     }
                  
                 }
@@ -53,6 +56,7 @@
                     color: $color_dark_orange;
                     &::after{
                         width: 100%;
+                        left: 0;
                     }
                  
                 }
@@ -75,3 +79,5 @@
            
         }
     }
+
+    
